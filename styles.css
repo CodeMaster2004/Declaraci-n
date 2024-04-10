@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(corazon.jpg); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#container {
+    text-align: center;
+    font-family:'Lobster', cursive; 
+}
+
+h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));
+    margin-bottom: 1rem;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+}
+
+#buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(133, 10, 80), rgb(0, 0, 0));
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7ba045;
+}
+
+#btnNo {
+    background-image: linear-gradient(to right, rgb(83, 1, 1), rgb(0, 0, 0));
+}
+
+#btnNo:hover {
+    background-color: #d32f2f;
+}
