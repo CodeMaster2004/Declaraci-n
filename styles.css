@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));
+    background-image: linear-gradient(to right, rgb(13, 0, 255), rgb(255, 0, 0));
     margin-bottom: 1rem;
     -webkit-background-clip: text; 
     background-clip: text;
@@ -27,31 +27,285 @@ h1 {
 
 #buttons {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-image: linear-gradient(to right, rgb(133, 10, 80), rgb(0, 0, 0));
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+
+
 
 button:hover {
     background-color: #7ba045;
 }
 
-#btnNo {
-    background-image: linear-gradient(to right, rgb(83, 1, 1), rgb(0, 0, 0));
-}
+
+button {
+    margin: 0 10px;
+    background: linear-gradient(45deg, transparent 27%, #8a0b0b 5%, #880b0b 73%, transparent 27%);
+    box-shadow: 6px 0px 0px #000000;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: 3px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fe0000;
+    transition: all .3s ease-in-out;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0040);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0040);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0040);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0040);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0040);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #ff0040);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  #btnSi:hover {
+    background: transparent;
+    color: #f60000;
+    box-shadow: 0 0 50px #fe003f;
+  }
+  
+  #btnSi:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ff0040);
+    z-index: 2;
+  }
+  
+  #btnSi:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ff0040);
+    z-index: 2;
+  }
+  
+  #btnSi:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ff0040);
+    z-index: 2;
+  }
+  
+  #btnSi:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ff0040);
+    z-index: 2;
+  }
+  
+  #btnSi:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ff0040);
+    z-index: 2;
+  }
+  
+  #btnSi:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fd003f);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fe003f
+  }
+
+ 
 
 #btnNo:hover {
-    background-color: #d32f2f;
+
+    background-color: #423d3d;
 }
+#btnNo {
+    transform-style: preserve-3d;
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+
+    
+}
+  
+  #btnNo:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #363434;
+    transform: skewX(-41deg);
+
+}
+  
+  #btnNo:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2d2a2a;
+    transform: skewY(-49deg);
+
+}
+  
+  #btnNo span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 25px;
+    transition: 1.1s ease-out;
+
+  }
+  
+  #btnNo:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: rgb(66, 60, 60);
+  }
+  
+  #btnNo:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+  }
+  
+  #btnNo:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    background-color: rgb(70, 63, 63);
+    opacity: .8;
+  }
+  
+  #btnNo:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    background-color: rgb(71, 64, 64);
+    opacity: .6;
+  }
+  
+  #btnNo:hover span:nth-child(2) {
+    background-color: rgb(63, 59, 59);
+    transform: translate(10px, -10px);
+    opacity: .4;
+  }
+  
+  #btnNo:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: .2;
+    background-color: rgb(57, 52, 52);
+  }
+  
+  #btnNo:active span:nth-child(5) {
+    transform: translate(20px, -20px);
+    opacity: 1;
+  }
+  
+  #btnNo:active span:nth-child(4) {
+    transform: translate(15px, -15px);
+  }
+  
+  #btnNo:active span:nth-child(3) {
+    transform: translate(10px, -10px);
+  }
+  
+  #btnNo:active span:nth-child(2) {
+    transform: translate(5px, -5px);
+  }
+  
+  #btnNo:active span:nth-child(1) {
+    transform: translate(0px, 0px);
+  }
+  
+  #btnNo:nth-child(1):hover span {
+    background: #3c3e3d;
+  }

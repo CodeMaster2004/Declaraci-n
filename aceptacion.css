@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body {
+    background-image: url(amor.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(to right, rgb(84, 20, 56), rgb(221, 15, 94), rgb(12, 0,0));
-    font-family: Arial, sans-serif;
+    font-family:'Lobster', cursive; 
+
 }
 #container {
     text-align: center;
@@ -19,9 +20,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 h1 {
+   
     font-size: 32px;
     color: #ffffff;
     margin-bottom: 10px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 132));
+    margin-bottom: 1rem;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
 }
 p {
     font-size: 18px;
