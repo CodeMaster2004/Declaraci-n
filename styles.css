@@ -36,12 +36,12 @@ h1 {
 
 
 
-button:hover {
+#btnSi:hover {
     background-color: #7ba045;
 }
 
 
-button {
+#btnSi {
     margin: 0 10px;
     background: linear-gradient(45deg, transparent 27%, #8a0b0b 5%, #880b0b 73%, transparent 27%);
     box-shadow: 6px 0px 0px #000000;
@@ -191,65 +191,57 @@ button {
   .fil0 {
     fill: #fe003f
   }
-
- 
-
-#btnNo {
-  --black: #000000;
-  --ch-black: #141414;
-  --eer-black: #1b1b1b;
-  --night-rider: #2e2e2e;
-  --white: #ffffff;
-  --af-white: #f3f3f3;
-  --ch-white: #e1e1e1;
-  border-radius: 8px;
-  width: 100px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 0px 15px;
-  border: none;
-  color: white;
-  position: relative;
-  cursor: pointer;
-  font-weight: 700;
-  transition-duration: .2s;
-  background-color: var(--ch-black);
-}
-#btnNo:before, #btnNo:after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  border-radius: 10px;
-  background: linear-gradient(45deg, 
-  var(--ch-black), var(--eer-black),
-  var(--night-rider), var(--ch-white), var(--night-rider), 
-	var(--eer-black), var(--ch-black),var(--ch-black));
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 20s linear infinite;
-}
-
-@keyframes steam {
-  0% {
-    background-position: 0 0;
+  .boton {
+    
+    width: 100px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    font-weight: 900;
+    transition-duration: .2s;
+    background: linear-gradient(0deg, #000, #272727);
   }
-
-  50% {
-    background-position: 400% 0;
+  
+  .boton:before, .button:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #fb0094, #ff3700, #00f7ff,#0022ff, #ff0000, #fb0094, 
+      #0000ff, #ffffff,#006eff, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
   }
-
-  100% {
-    background-position: 0 0;
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
   }
-}
-
-#btnNo:after {
-  filter: blur(50px);
-}
-
+  
+  .boton:after {
+    filter: blur(50px);
+  }
+  
+  

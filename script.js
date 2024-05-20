@@ -7,7 +7,7 @@ let lastPosition = { x: 0, y: 0 };
 function mueveElBoton() {
     const containerWidth = 720;
     const containerHeight = 720;
-    const minDistance = 200;
+    const minDistance = 150;
 
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
