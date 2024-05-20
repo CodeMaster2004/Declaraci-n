@@ -27,4 +27,5 @@ function mueveElBoton() {
     btnNo.style.position = "absolute";
     btnNo.style.left = newWidth + "px";
     btnNo.style.top = newHeight + "px";
+    document.getElementById("btnNo").addEventListener("click", mueveElBoton);
 }
